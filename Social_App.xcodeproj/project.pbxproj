@@ -11,6 +11,12 @@
 		AD16EE5728A8E7890040E649 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16EE5628A8E7890040E649 /* ContentView.swift */; };
 		AD16EE5928A8E78A0040E649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD16EE5828A8E78A0040E649 /* Assets.xcassets */; };
 		AD16EE5C28A8E78A0040E649 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD16EE5B28A8E78A0040E649 /* Preview Assets.xcassets */; };
+		AD16EE6428A8E8590040E649 /* PostSceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16EE6328A8E8590040E649 /* PostSceneProtocols.swift */; };
+		AD16EE6628A8E8610040E649 /* PostSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16EE6528A8E8610040E649 /* PostSceneView.swift */; };
+		AD16EE6828A8E86C0040E649 /* PostSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16EE6728A8E86C0040E649 /* PostSceneInteractor.swift */; };
+		AD16EE6A28A8E8790040E649 /* PostScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16EE6928A8E8790040E649 /* PostScenePresenter.swift */; };
+		AD16EE6C28A8E8830040E649 /* PostSceneEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16EE6B28A8E8830040E649 /* PostSceneEntity.swift */; };
+		AD16EE6E28A8E88C0040E649 /* PostSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16EE6D28A8E88C0040E649 /* PostSceneRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		AD16EE5628A8E7890040E649 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD16EE5828A8E78A0040E649 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD16EE5B28A8E78A0040E649 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD16EE6328A8E8590040E649 /* PostSceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSceneProtocols.swift; sourceTree = "<group>"; };
+		AD16EE6528A8E8610040E649 /* PostSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSceneView.swift; sourceTree = "<group>"; };
+		AD16EE6728A8E86C0040E649 /* PostSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSceneInteractor.swift; sourceTree = "<group>"; };
+		AD16EE6928A8E8790040E649 /* PostScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostScenePresenter.swift; sourceTree = "<group>"; };
+		AD16EE6B28A8E8830040E649 /* PostSceneEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSceneEntity.swift; sourceTree = "<group>"; };
+		AD16EE6D28A8E88C0040E649 /* PostSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSceneRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 		AD16EE5328A8E7890040E649 /* Social_App */ = {
 			isa = PBXGroup;
 			children = (
+				AD16EE6228A8E8430040E649 /* PostScene */,
 				AD16EE5428A8E7890040E649 /* Social_AppApp.swift */,
 				AD16EE5628A8E7890040E649 /* ContentView.swift */,
 				AD16EE5828A8E78A0040E649 /* Assets.xcassets */,
@@ -65,6 +78,19 @@
 				AD16EE5B28A8E78A0040E649 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD16EE6228A8E8430040E649 /* PostScene */ = {
+			isa = PBXGroup;
+			children = (
+				AD16EE6328A8E8590040E649 /* PostSceneProtocols.swift */,
+				AD16EE6528A8E8610040E649 /* PostSceneView.swift */,
+				AD16EE6728A8E86C0040E649 /* PostSceneInteractor.swift */,
+				AD16EE6928A8E8790040E649 /* PostScenePresenter.swift */,
+				AD16EE6B28A8E8830040E649 /* PostSceneEntity.swift */,
+				AD16EE6D28A8E88C0040E649 /* PostSceneRouter.swift */,
+			);
+			path = PostScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD16EE5728A8E7890040E649 /* ContentView.swift in Sources */,
+				AD16EE6C28A8E8830040E649 /* PostSceneEntity.swift in Sources */,
+				AD16EE6628A8E8610040E649 /* PostSceneView.swift in Sources */,
+				AD16EE6828A8E86C0040E649 /* PostSceneInteractor.swift in Sources */,
 				AD16EE5528A8E7890040E649 /* Social_AppApp.swift in Sources */,
+				AD16EE6E28A8E88C0040E649 /* PostSceneRouter.swift in Sources */,
+				AD16EE6428A8E8590040E649 /* PostSceneProtocols.swift in Sources */,
+				AD16EE6A28A8E8790040E649 /* PostScenePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
